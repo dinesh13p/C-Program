@@ -20,23 +20,23 @@
 #include <stdio.h>
 int main()
 {
-    int marks[5];
-    int sum = 0;
+    float marks[5];
+    float sum = 0;
 
-    for (int i = 0; i < 5; i++)
+    int i;
+    for ( i = 0; i < 5; i++)
     {
         printf("Enter marks of subject %d: ", i + 1);
-        scanf("%d", &marks[i]);
+        scanf("%f", &marks[i]);
         sum += marks[i];
     }
 
-    int i;
     for (i = 0; i < 5; i++)
     {
-        printf("Marks for subject %d is %d\n", i + 1, marks[i]);
+        printf("Marks for subject %d is %f\n", i + 1, marks[i]);
     }
 
-    printf("The sum of all marks given is: %d\n", sum);
+    printf("The sum of all marks given is: %.2f\n", sum);
 
     float average;
     average = sum / 5;
