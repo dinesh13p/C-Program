@@ -37,10 +37,30 @@ int main()
     }
 
     printf("The sum of all marks given is: %.2f\n", sum);
+    
 
     float average;
     average = sum / 5;
     printf("The average marks is: %.2f\n", average);
+
+
+    float highest, lowest;
+    highest = marks[0];
+    lowest = marks[0];
+
+    for (i = 0; i < 5; i++)
+    {
+        if (marks[i] > highest)
+        {
+            highest = marks[i];
+        }
+        if (marks[i] < lowest)
+        {
+            lowest = marks[i];
+        }
+    }
+    printf("The highest mark is: %.2f\n", highest);
+    printf("The lowest mark is: %.2f\n", lowest);
 
     return 0;
 }
