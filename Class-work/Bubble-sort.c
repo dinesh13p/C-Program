@@ -6,6 +6,11 @@ int main()
     int temp;                                // Temporary variable for the swapping
     int i, j;
 
+    printf("Original Array: \n");
+    for(i = 0; i < size; i++){
+        printf("%d\t", numbers[i]);
+    }
+
     // Bubble Sort Algorithm
     for (i = 0; i < size - 1; i++)
     {
@@ -22,7 +27,7 @@ int main()
     }
 
     // Printing the sorted array
-    printf("Sorted array in ascending order: \n");
+    printf("\nSorted array in ascending order: \n");
     for (i = 0; i < size; i++)
     {
         printf("%d\t", numbers[i]);
