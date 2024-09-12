@@ -18,7 +18,7 @@ int main()
 
     int transpose[3][2];
     transpose[3][2] = matrix[j][i];
-    printf("%d\t", transpose[3][2]);
+    printf("%d\t", transpose[i][j]);
 
     return 0;
 }
