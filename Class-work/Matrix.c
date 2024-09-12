@@ -10,7 +10,14 @@ int main()
         {40, 50, 60}};
 
     int Sum[2][3];
-    Sum[2][3] = A[2][3] + B[2][3];
+
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            Sum[i][j] = A[i][j] + B[i][j];
+        }
+    }
 
     printf("The sum of matrix is: \n");
     for (int i = 0; i < 2; i++)
